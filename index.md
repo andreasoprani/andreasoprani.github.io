@@ -1,2 +1,1 @@
-## Welcome to my page
-Work in progress
+## Work in progress
