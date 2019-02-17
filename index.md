@@ -1,7 +1,7 @@
 ## Personal info
 
-Born in Parma (Italy) on the 8th of October 1996.<br/>
-Currently living in Fontanellato (PR).
+Born in Parma, Italy, on the 8th of October 1996.<br/>
+Currently living in Fontanellato (Parma, Italy).
 
 ## Education
 
