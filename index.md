@@ -1,5 +1,3 @@
-This page is a work in progress.
-
 ## Personal info
 
 Born in Parma (Italy) on the 8th of October 1996.<br/>
