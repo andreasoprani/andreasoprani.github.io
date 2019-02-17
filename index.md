@@ -1,3 +1,5 @@
-## Work in progress
+This page is a work in progress.
 
-[AI-Wiki](https://andreasoprani.github.io/AI-Wiki/)
+Projects:
+
+* [AI-Wiki](https://andreasoprani.github.io/AI-Wiki/)
