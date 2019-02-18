@@ -13,5 +13,5 @@ Currently living in Fontanellato (Parma, Italy).
 
 ## Projects:
 
-* Every day you play the gong. (link to be published).
+* ![Every day you play the gong.](./Every-day-you-play-the-gong).
 * [AI-Wiki](./AI-Wiki/)
