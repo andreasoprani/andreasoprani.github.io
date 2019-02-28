@@ -6,4 +6,5 @@ I contributed as team leader (having presented the concept), game designer and p
 
 ## Links
 
-To be published.
+* [Itch.io page]("https://polimi-game-collective.itch.io/everyday-you-play-the-gong")<br/>
+* [GitHub Repo]("https://github.com/AndreaSoprani/EveryDayYouPlayTheGong")
