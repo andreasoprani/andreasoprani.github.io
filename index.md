@@ -14,4 +14,4 @@ Currently living in Fontanellato (Parma, Italy).
 ## Projects:
 
 * [Every day you play the gong.](./Every-day-you-play-the-gong)
-* [Personal AI-Wiki (WIP)](./AI-Wiki/)
+* [Personal AI and Data Science Wiki (WIP)](./AI-Wiki/)
