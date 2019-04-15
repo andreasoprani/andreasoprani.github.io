@@ -8,8 +8,8 @@ Currently living in Fontanellato (Parma, Italy).
 * High school:
   * Scuola per l'Europa (Parma, Italy)
 * University:
-  * Ingegneria Informatica @ Politecnico di Milano (104/110)
-  * Computer Science and Engineering @ Politecnico di Milano (ongoing)
+  * BSc: Ingegneria Informatica @ Politecnico di Milano (104/110)
+  * MSc: Computer Science and Engineering @ Politecnico di Milano (ongoing)
 
 ## Projects:
 
