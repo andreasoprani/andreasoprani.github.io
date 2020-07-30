@@ -9,8 +9,11 @@ Currently living in Fontanellato (Parma, Italy).
   * Scuola per l'Europa (Parma, Italy)
 * University:
   * BSc: Ingegneria Informatica @ Politecnico di Milano (104/110)
-  * MSc: Computer Science and Engineering @ Politecnico di Milano (ongoing)
+  * MSc: Computer Science and Engineering @ Politecnico di Milano (108/110)
 
-## Projects:
+## Personal and University Projects:
 
+* [Audible News Bot](./Audible-news-bot)
+* [dreamify](https://github.com/AndreaSoprani/dreamify)
 * [Every day you play the gong.](./Every-day-you-play-the-gong)
+* [Sudoku Solver](https://github.com/AndreaSoprani/SudokuSolver)
