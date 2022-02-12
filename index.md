@@ -10,5 +10,5 @@ Working as a Machine Learning Engineer @ [Quick Algorithm](https://www.quickalgo
 * High school:
   * Scuola per l'Europa (Parma, Italy)
 * University:
-  * BSc: Ingegneria Informatica @ Politecnico di Milano (104/110)
-  * MSc: Computer Science and Engineering @ Politecnico di Milano (108/110)
+  * BSc: Ingegneria Informatica @ Politecnico di Milano
+  * MSc: Computer Science and Engineering @ Politecnico di Milano
