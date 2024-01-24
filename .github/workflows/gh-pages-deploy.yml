@@ -34,7 +34,7 @@ jobs:
     - name: Install  Rust
       uses: dtolnay/rust-toolchain@stable
       with:
-      components: clippy, rustfmt
+        components: clippy, rustfmt
 
     - name: Add WASM target
       run: rustup target add wasm32-unknown-unknown
@@ -72,14 +72,14 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v4
       with:
-      enablement: true
+        enablement: true
         # token:
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
       # Upload dist dir
-      path: './dist'
+        path: './dist'
 
     - name: Deploy to GitHub Pages 🚀
       id: deployment
