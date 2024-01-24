@@ -26,7 +26,7 @@ fn Bio() -> impl IntoView {
                 "Software Engineer focused on Machine Learning and Back-end." <br/>
                 "MSc in Computer Science and Engineering @ "
                 <a href="https://polimi.it">"Politecnico di Milano"</a> "." <br/>
-                "Working as a Software Engineer "
+                "Working as a Software Engineer @ "
                 <a href="https://quickalgorithm.com">"Quick Algorithm"</a> "."
             </p>
         </section>
