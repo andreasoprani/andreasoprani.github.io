@@ -1,7 +1,7 @@
 name: Release to Github Pages
 
 on:
-push:
+  push:
     branches: [main]
 workflow_dispatch:
 
