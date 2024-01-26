@@ -23,7 +23,7 @@ fn Bio() -> impl IntoView {
             <h2 id="personal-info">"Personal info"</h2>
             <p>
                 "Born in Parma, Italy." <br/> "Currently living in Milan (Italy)." <br/>
-                "Software Engineer focused on Machine Learning and Back-end." <br/>
+                "Software Engineer interested in Machine Learning, Data Engineering and Generative Art." <br/>
                 "MSc in Computer Science and Engineering @ "
                 <a href="https://polimi.it">"Politecnico di Milano"</a> "." <br/>
                 "Working as a Software Engineer @ "
