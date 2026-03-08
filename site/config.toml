@@ -1,0 +1,6 @@
+base_url = "https://sprn.it"
+title = "Andrea Soprani"
+description = "Andrea Soprani's personal website"
+compile_sass = true
+minify_html = true
+build_search_index = false
