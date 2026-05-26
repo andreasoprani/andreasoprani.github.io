@@ -1,37 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Andrea Soprani</title>
-  <meta name="description" content="Andrea Soprani's personal website">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/propic.jpg">
-</head>
+{% block title %}{{ section.title }}{% endblock title %}
+{% block description %}{{ section.description | default(value="Andrea Soprani's personal website") }}{% endblock description %}
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1><a href="/">Andrea Soprani</a></h1>
-      <img src="/propic.jpg" alt="Andrea Soprani">
-      <p>This is me.</p>
-      <p class="view">
-        <a href="https://github.com/andreasoprani" aria-label="GitHub Profile"><img src="/github-mark.svg" alt="GitHub"
-            width="24" height="24"></a>
-        <a href="https://x.com/AndreaSoprani" aria-label="Twitter Profile"><img src="/twitter.svg" alt="Twitter"
-            width="24" height="24"></a>
-        <a href="https://bsky.app/profile/sprn.it" aria-label="Bluesky Profile"><img src="/bluesky.svg" alt="Bluesky"
-            width="24" height="24"></a>
-      </p>
-    </header>
+{% block content %}
+  {{ section.content | safe }}
 
-    <section>
-      {{ section.content | safe }}
-    </section>
-
-
-  </div>
-</body>
-
-</html>
+  {% set blog = get_section(path="blog/_index.md") %}
+  {% if blog.pages | length > 0 %}
+    <h2>Blog posts</h2>
+    <ul class="post-list">
+      {% for post in blog.pages %}
+        {% if loop.index <= 5 %}
+          <li>
+            <a href="{{ post.permalink }}">{{ post.title }}</a>
+            <small>{{ post.date | date(format="%Y-%m-%d") }}</small>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock content %}

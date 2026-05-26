@@ -79,6 +79,32 @@ small {
     font-size: 11px
 }
 
+nav {
+    margin: 0 0 20px
+}
+
+.post-list {
+    list-style: none;
+    padding: 0
+}
+
+.post-list li {
+    margin: 0 0 20px
+}
+
+.post-list small {
+    display: block;
+    margin-top: 3px
+}
+
+.post-list p {
+    margin-top: 6px
+}
+
+article h2 {
+    margin-bottom: 8px
+}
+
 footer {
     width: 270px;
     float: left;
