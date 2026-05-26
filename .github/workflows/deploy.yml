@@ -38,6 +38,14 @@ jobs:
       - name: Copy CNAME
         run: cp CNAME public/CNAME
 
+      - name: Download MWPC web build
+        run: |
+          mkdir -p public/mwpc
+          curl -fL \
+            https://github.com/andreasoprani/mwpc/releases/download/mwpc-web-latest/mwpc-web.zip \
+            -o /tmp/mwpc-web.zip
+          unzip -o /tmp/mwpc-web.zip -d public/mwpc
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
