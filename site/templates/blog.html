@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | Andrea Soprani{% endblock title %}
+{% block description %}{{ section.description | default(value="Blog posts by Andrea Soprani") }}{% endblock description %}
+
+{% block content %}
+  <p><a href="/">← Home</a></p>
+  <h2>{{ section.title }}</h2>
+  {{ section.content | safe }}
+
+  <ul class="post-list">
+    {% for post in section.pages %}
+      <li>
+        <a href="{{ post.permalink }}">{{ post.title }}</a>
+        <small>{{ post.date | date(format="%Y-%m-%d") }}</small>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

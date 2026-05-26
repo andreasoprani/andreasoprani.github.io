@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | Andrea Soprani{% endblock title %}
+{% block description %}{{ page.description | default(value="A blog post by Andrea Soprani") }}{% endblock description %}
+
+{% block content %}
+  <article>
+    <p><a href="/blog/">← Blog</a></p>
+    <h2>{{ page.title }}</h2>
+    {% if page.date %}<p><small>{{ page.date | date(format="%Y-%m-%d") }}</small></p>{% endif %}
+    {{ page.content | safe }}
+  </article>
+{% endblock content %}
