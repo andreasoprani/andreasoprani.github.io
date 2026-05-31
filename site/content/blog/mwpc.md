@@ -15,5 +15,6 @@ The planet sprites are cut out from the Balatro planet cards by [LocalThunk](htt
 I like the card sprites (and the game) very much, but I can replace them with other sprites if it's an issue.
 
 I published this so that I can consider this project done and move on to a new one, even though there are still TODOs in the repo that I may address in the future.
+These are mainly polishing improvements (e.g. the rendering of sprites and fonts on mobile is a bit clunky)
 
 Anyway, you can [play it here](/mwpc/) and you can [view the source code here](https://github.com/andreasoprani/mwpc).
