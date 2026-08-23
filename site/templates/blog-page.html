@@ -13,6 +13,11 @@
 {% block content %}
   <article>
     <p><a href="/blog/">← Blog</a></p>
+    {% if page.extra.unlisted | default(value=false) %}
+      <aside class="post-notice" aria-label="Post status">
+        <p><strong>Unlisted post.</strong> This post may still be a draft and is subject to change.</p>
+      </aside>
+    {% endif %}
     <h2>{{ page.title }}</h2>
     {% if page.date %}<p><small>{{ page.date | date(format="%Y-%m-%d") }}</small></p>{% endif %}
     {{ page.content | safe }}
