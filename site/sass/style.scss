@@ -58,8 +58,27 @@ a small {
     margin: 0 auto
 }
 
+.wrapper.no-sidebar {
+    width: 700px
+}
+
+.no-sidebar header,
+.no-sidebar section {
+    width: auto;
+    float: none;
+    position: static
+}
+
 img {
     max-width: 100%
+}
+
+.profile-photo {
+    width: 220px
+}
+
+.article-photo {
+    width: 240px
 }
 
 header {
@@ -127,6 +146,10 @@ footer {
 
     header {
         padding-right: 320px
+    }
+
+    .no-sidebar header {
+        padding-right: 0
     }
 
     section {

@@ -2,6 +2,13 @@
 
 {% block title %}{{ page.title }} | Andrea Soprani{% endblock title %}
 {% block description %}{{ page.description | default(value="A blog post by Andrea Soprani") }}{% endblock description %}
+{% block wrapper_class %}{% if page.extra.photo %}with-sidebar{% else %}no-sidebar{% endif %}{% endblock wrapper_class %}
+
+{% block sidebar %}
+  {% if page.extra.photo %}
+    <img class="article-photo" src="{{ page.extra.photo }}" alt="{% if page.extra.photo_alt %}{{ page.extra.photo_alt }}{% else %}{{ page.title }}{% endif %}">
+  {% endif %}
+{% endblock sidebar %}
 
 {% block content %}
   <article>

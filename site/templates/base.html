@@ -11,24 +11,13 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper {% block wrapper_class %}no-sidebar{% endblock wrapper_class %}">
     <header>
       <nav>
-        <a href="/">Home</a> /
+        <a href="/">Home</a> ·
         <a href="/blog/">Blog</a>
       </nav>
-      <img src="/propic.jpg" alt="Andrea Soprani">
-      <p>This is me.</p>
-      <p class="view">
-        <a href="https://github.com/andreasoprani" aria-label="GitHub Profile"><img src="/github-mark.svg" alt="GitHub"
-            width="24" height="24"></a>
-        <a href="https://www.linkedin.com/in/andreasoprani/" aria-label="LinkedIn Profile"><img src="/linkedin.svg" alt="LinkedIn"
-            width="24" height="24"></a>
-        <a href="https://x.com/AndreaSoprani" aria-label="Twitter Profile"><img src="/twitter.svg" alt="Twitter"
-            width="24" height="24"></a>
-        <a href="https://bsky.app/profile/sprn.it" aria-label="Bluesky Profile"><img src="/bluesky.svg" alt="Bluesky"
-            width="24" height="24"></a>
-      </p>
+      {% block sidebar %}{% endblock sidebar %}
     </header>
 
     <section>
