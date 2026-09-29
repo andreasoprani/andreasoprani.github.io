@@ -3,8 +3,52 @@
     src:  url('/GeistMono-Regular.woff2') format('woff2'),
 }
 
-.highlight {
-    background-color: #f8f8f8
+article pre {
+    background-color: #f6f8fa;
+    color: #24292f;
+    border: 1px solid #d8dee4;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 0 0 24px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    tab-size: 4;
+}
+
+article code {
+    font-family: "Geist Mono", monospace;
+    background-color: #f0f2f4;
+    border-radius: 3px;
+    padding: 0.15em 0.35em;
+    color: #24292f;
+}
+
+article pre code {
+    display: block;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+.giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+}
+
+.giallo-ln {
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0.4em;
+    min-width: 3ch;
+    text-align: right;
+    opacity: 0.8;
 }
 
 body {
@@ -121,7 +165,56 @@ nav {
 }
 
 article h2 {
-    margin-bottom: 8px
+    margin: 48px 0 20px;
+}
+
+article > h2:first-of-type {
+    margin-top: 0;
+}
+
+article h3 {
+    margin: 32px 0 16px;
+}
+
+article h4,
+article h5,
+article h6 {
+    margin: 24px 0 12px;
+}
+
+article h2 + h3 {
+    margin-top: 24px;
+}
+
+article table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 24px 0 32px;
+}
+
+article th,
+article td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
+}
+
+article th {
+    background-color: #f6f8fa;
+    color: #393939;
+}
+
+.post-notice {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.post-notice p {
+    margin: 0;
 }
 
 footer {
