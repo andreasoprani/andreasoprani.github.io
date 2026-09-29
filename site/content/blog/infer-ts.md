@@ -1,7 +1,7 @@
 +++
 title = "infer-ts: on small projects and AI coding."
 description = ""
-date = 2026-08-14
+date = 2026-09-29
 [extra]
 unlisted = true
 +++

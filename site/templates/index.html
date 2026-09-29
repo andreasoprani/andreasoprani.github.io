@@ -23,7 +23,7 @@
     <h2>Blog posts</h2>
     <ul class="post-list">
       {% for post in blog.pages %}
-        {% if loop.index <= 5 %}
+        {% if loop.index <= 5 and post.extra.unlisted | default(value=false) == false %}
           <li>
             <a href="{{ post.permalink }}">{{ post.title }}</a>
             <small>{{ post.date | date(format="%Y-%m-%d") }}</small>

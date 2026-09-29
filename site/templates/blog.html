@@ -22,11 +22,13 @@
 
   <ul class="post-list">
     {% for post in section.pages %}
-      <li>
-        <a href="{{ post.permalink }}">{{ post.title }}</a>
-        <small>{{ post.date | date(format="%Y-%m-%d") }}</small>
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-      </li>
+      {% if post.extra.unlisted | default(value=false) == false %}
+        <li>
+          <a href="{{ post.permalink }}">{{ post.title }}</a>
+          <small>{{ post.date | date(format="%Y-%m-%d") }}</small>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 {% endblock content %}
